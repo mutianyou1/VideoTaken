@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD9B855C1CC5BEE500BFCFDC /* PostVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9B855B1CC5BEE500BFCFDC /* PostVideoViewController.m */; };
+		DD9DA1D91CBB6F2400F93B9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9DA1D81CBB6F2400F93B9C /* main.m */; };
+		DD9DA1DC1CBB6F2400F93B9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9DA1DB1CBB6F2400F93B9C /* AppDelegate.m */; };
+		DD9DA1DF1CBB6F2400F93B9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9DA1DE1CBB6F2400F93B9C /* ViewController.m */; };
+		DD9DA1E41CBB6F2400F93B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9DA1E31CBB6F2400F93B9C /* Assets.xcassets */; };
+		DD9DA1E71CBB6F2400F93B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DA1E51CBB6F2400F93B9C /* LaunchScreen.storyboard */; };
+		DD9DA1F21CBB6F2400F93B9C /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9DA1F11CBB6F2400F93B9C /* ____Tests.m */; };
+		DD9DA1FD1CBB6F2400F93B9C /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9DA1FC1CBB6F2400F93B9C /* ____UITests.m */; };
+		DD9DA20B1CBB6F9A00F93B9C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9DA20A1CBB6F9A00F93B9C /* AVFoundation.framework */; };
+		DD9DA2101CBB769800F93B9C /* VedioTakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9DA20F1CBB769800F93B9C /* VedioTakeViewController.m */; };
+		DD9DA2131CBB76B600F93B9C /* VedioCommunicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9DA2121CBB76B600F93B9C /* VedioCommunicateViewController.m */; };
+		DDAB7B351CBCD06E00E6585F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB7B341CBCD06E00E6585F /* AssetsLibrary.framework */; };
+		DDAB7B381CBCF3FF00E6585F /* MUCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAB7B371CBCF3FF00E6585F /* MUCaptureSession.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD9DA1EE1CBB6F2400F93B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9DA1CC1CBB6F2400F93B9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9DA1D31CBB6F2400F93B9C;
+			remoteInfo = "视频通话";
+		};
+		DD9DA1F91CBB6F2400F93B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9DA1CC1CBB6F2400F93B9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9DA1D31CBB6F2400F93B9C;
+			remoteInfo = "视频通话";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD9B855A1CC5BEE500BFCFDC /* PostVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostVideoViewController.h; sourceTree = "<group>"; };
+		DD9B855B1CC5BEE500BFCFDC /* PostVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostVideoViewController.m; sourceTree = "<group>"; };
+		DD9DA1D41CBB6F2400F93B9C /* 视频通话.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "视频通话.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9DA1D81CBB6F2400F93B9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD9DA1DA1CBB6F2400F93B9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD9DA1DB1CBB6F2400F93B9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD9DA1DD1CBB6F2400F93B9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD9DA1DE1CBB6F2400F93B9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD9DA1E31CBB6F2400F93B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD9DA1E61CBB6F2400F93B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD9DA1E81CBB6F2400F93B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9DA1ED1CBB6F2400F93B9C /* 视频通话Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "视频通话Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9DA1F11CBB6F2400F93B9C /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		DD9DA1F31CBB6F2400F93B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9DA1F81CBB6F2400F93B9C /* 视频通话UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "视频通话UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9DA1FC1CBB6F2400F93B9C /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		DD9DA1FE1CBB6F2400F93B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9DA20A1CBB6F9A00F93B9C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DD9DA20E1CBB769800F93B9C /* VedioTakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VedioTakeViewController.h; sourceTree = "<group>"; };
+		DD9DA20F1CBB769800F93B9C /* VedioTakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VedioTakeViewController.m; sourceTree = "<group>"; };
+		DD9DA2111CBB76B600F93B9C /* VedioCommunicateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VedioCommunicateViewController.h; sourceTree = "<group>"; };
+		DD9DA2121CBB76B600F93B9C /* VedioCommunicateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VedioCommunicateViewController.m; sourceTree = "<group>"; };
+		DDAB7B341CBCD06E00E6585F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		DDAB7B361CBCF3FF00E6585F /* MUCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUCaptureSession.h; sourceTree = "<group>"; };
+		DDAB7B371CBCF3FF00E6585F /* MUCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUCaptureSession.m; sourceTree = "<group>"; };
+		DDBE48F31CBC8F4D00918502 /* MuVideoProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuVideoProject.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9DA1D11CBB6F2400F93B9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDAB7B351CBCD06E00E6585F /* AssetsLibrary.framework in Frameworks */,
+				DD9DA20B1CBB6F9A00F93B9C /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9DA1EA1CBB6F2400F93B9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9DA1F51CBB6F2400F93B9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD9DA1CB1CBB6F2400F93B9C = {
+			isa = PBXGroup;
+			children = (
+				DDAB7B341CBCD06E00E6585F /* AssetsLibrary.framework */,
+				DD9DA20A1CBB6F9A00F93B9C /* AVFoundation.framework */,
+				DD9DA1D61CBB6F2400F93B9C /* 视频通话 */,
+				DD9DA1F01CBB6F2400F93B9C /* 视频通话Tests */,
+				DD9DA1FB1CBB6F2400F93B9C /* 视频通话UITests */,
+				DD9DA1D51CBB6F2400F93B9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9DA1D51CBB6F2400F93B9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9DA1D41CBB6F2400F93B9C /* 视频通话.app */,
+				DD9DA1ED1CBB6F2400F93B9C /* 视频通话Tests.xctest */,
+				DD9DA1F81CBB6F2400F93B9C /* 视频通话UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9DA1D61CBB6F2400F93B9C /* 视频通话 */ = {
+			isa = PBXGroup;
+			children = (
+				DD9DA1DA1CBB6F2400F93B9C /* AppDelegate.h */,
+				DD9DA1DB1CBB6F2400F93B9C /* AppDelegate.m */,
+				DDBE48F31CBC8F4D00918502 /* MuVideoProject.pch */,
+				DD9DA1DD1CBB6F2400F93B9C /* ViewController.h */,
+				DD9DA1DE1CBB6F2400F93B9C /* ViewController.m */,
+				DD9DA20D1CBB766600F93B9C /* vedioCommunicate */,
+				DD9DA20C1CBB764600F93B9C /* takeVedio */,
+				DD9DA1E31CBB6F2400F93B9C /* Assets.xcassets */,
+				DD9DA1E51CBB6F2400F93B9C /* LaunchScreen.storyboard */,
+				DD9DA1E81CBB6F2400F93B9C /* Info.plist */,
+				DD9DA1D71CBB6F2400F93B9C /* Supporting Files */,
+			);
+			path = "视频通话";
+			sourceTree = "<group>";
+		};
+		DD9DA1D71CBB6F2400F93B9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD9DA1D81CBB6F2400F93B9C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD9DA1F01CBB6F2400F93B9C /* 视频通话Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9DA1F11CBB6F2400F93B9C /* ____Tests.m */,
+				DD9DA1F31CBB6F2400F93B9C /* Info.plist */,
+			);
+			path = "视频通话Tests";
+			sourceTree = "<group>";
+		};
+		DD9DA1FB1CBB6F2400F93B9C /* 视频通话UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9DA1FC1CBB6F2400F93B9C /* ____UITests.m */,
+				DD9DA1FE1CBB6F2400F93B9C /* Info.plist */,
+			);
+			path = "视频通话UITests";
+			sourceTree = "<group>";
+		};
+		DD9DA20C1CBB764600F93B9C /* takeVedio */ = {
+			isa = PBXGroup;
+			children = (
+				DD9DA20E1CBB769800F93B9C /* VedioTakeViewController.h */,
+				DD9DA20F1CBB769800F93B9C /* VedioTakeViewController.m */,
+				DD9B855A1CC5BEE500BFCFDC /* PostVideoViewController.h */,
+				DD9B855B1CC5BEE500BFCFDC /* PostVideoViewController.m */,
+				DDAB7B361CBCF3FF00E6585F /* MUCaptureSession.h */,
+				DDAB7B371CBCF3FF00E6585F /* MUCaptureSession.m */,
+			);
+			name = takeVedio;
+			sourceTree = "<group>";
+		};
+		DD9DA20D1CBB766600F93B9C /* vedioCommunicate */ = {
+			isa = PBXGroup;
+			children = (
+				DD9DA2111CBB76B600F93B9C /* VedioCommunicateViewController.h */,
+				DD9DA2121CBB76B600F93B9C /* VedioCommunicateViewController.m */,
+			);
+			name = vedioCommunicate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD9DA1D31CBB6F2400F93B9C /* 视频通话 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9DA2011CBB6F2400F93B9C /* Build configuration list for PBXNativeTarget "视频通话" */;
+			buildPhases = (
+				DD9DA1D01CBB6F2400F93B9C /* Sources */,
+				DD9DA1D11CBB6F2400F93B9C /* Frameworks */,
+				DD9DA1D21CBB6F2400F93B9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "视频通话";
+			productName = "视频通话";
+			productReference = DD9DA1D41CBB6F2400F93B9C /* 视频通话.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD9DA1EC1CBB6F2400F93B9C /* 视频通话Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9DA2041CBB6F2400F93B9C /* Build configuration list for PBXNativeTarget "视频通话Tests" */;
+			buildPhases = (
+				DD9DA1E91CBB6F2400F93B9C /* Sources */,
+				DD9DA1EA1CBB6F2400F93B9C /* Frameworks */,
+				DD9DA1EB1CBB6F2400F93B9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9DA1EF1CBB6F2400F93B9C /* PBXTargetDependency */,
+			);
+			name = "视频通话Tests";
+			productName = "视频通话Tests";
+			productReference = DD9DA1ED1CBB6F2400F93B9C /* 视频通话Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD9DA1F71CBB6F2400F93B9C /* 视频通话UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9DA2071CBB6F2400F93B9C /* Build configuration list for PBXNativeTarget "视频通话UITests" */;
+			buildPhases = (
+				DD9DA1F41CBB6F2400F93B9C /* Sources */,
+				DD9DA1F51CBB6F2400F93B9C /* Frameworks */,
+				DD9DA1F61CBB6F2400F93B9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9DA1FA1CBB6F2400F93B9C /* PBXTargetDependency */,
+			);
+			name = "视频通话UITests";
+			productName = "视频通话UITests";
+			productReference = DD9DA1F81CBB6F2400F93B9C /* 视频通话UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9DA1CC1CBB6F2400F93B9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = mutianyou1;
+				TargetAttributes = {
+					DD9DA1D31CBB6F2400F93B9C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 25RLMX6N5T;
+					};
+					DD9DA1EC1CBB6F2400F93B9C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 25RLMX6N5T;
+						TestTargetID = DD9DA1D31CBB6F2400F93B9C;
+					};
+					DD9DA1F71CBB6F2400F93B9C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 25RLMX6N5T;
+						TestTargetID = DD9DA1D31CBB6F2400F93B9C;
+					};
+				};
+			};
+			buildConfigurationList = DD9DA1CF1CBB6F2400F93B9C /* Build configuration list for PBXProject "视频通话" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD9DA1CB1CBB6F2400F93B9C;
+			productRefGroup = DD9DA1D51CBB6F2400F93B9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD9DA1D31CBB6F2400F93B9C /* 视频通话 */,
+				DD9DA1EC1CBB6F2400F93B9C /* 视频通话Tests */,
+				DD9DA1F71CBB6F2400F93B9C /* 视频通话UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9DA1D21CBB6F2400F93B9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9DA1E71CBB6F2400F93B9C /* LaunchScreen.storyboard in Resources */,
+				DD9DA1E41CBB6F2400F93B9C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9DA1EB1CBB6F2400F93B9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9DA1F61CBB6F2400F93B9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9DA1D01CBB6F2400F93B9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9DA1DF1CBB6F2400F93B9C /* ViewController.m in Sources */,
+				DD9DA2131CBB76B600F93B9C /* VedioCommunicateViewController.m in Sources */,
+				DD9DA1DC1CBB6F2400F93B9C /* AppDelegate.m in Sources */,
+				DD9DA1D91CBB6F2400F93B9C /* main.m in Sources */,
+				DD9B855C1CC5BEE500BFCFDC /* PostVideoViewController.m in Sources */,
+				DD9DA2101CBB769800F93B9C /* VedioTakeViewController.m in Sources */,
+				DDAB7B381CBCF3FF00E6585F /* MUCaptureSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9DA1E91CBB6F2400F93B9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9DA1F21CBB6F2400F93B9C /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9DA1F41CBB6F2400F93B9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9DA1FD1CBB6F2400F93B9C /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD9DA1EF1CBB6F2400F93B9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9DA1D31CBB6F2400F93B9C /* 视频通话 */;
+			targetProxy = DD9DA1EE1CBB6F2400F93B9C /* PBXContainerItemProxy */;
+		};
+		DD9DA1FA1CBB6F2400F93B9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9DA1D31CBB6F2400F93B9C /* 视频通话 */;
+			targetProxy = DD9DA1F91CBB6F2400F93B9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD9DA1E51CBB6F2400F93B9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9DA1E61CBB6F2400F93B9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD9DA1FF1CBB6F2400F93B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD9DA2001CBB6F2400F93B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD9DA2021CBB6F2400F93B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "视频通话/MuVideoProject.pch";
+				INFOPLIST_FILE = "视频通话/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = panyuanrongapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD9DA2031CBB6F2400F93B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "视频通话/MuVideoProject.pch";
+				INFOPLIST_FILE = "视频通话/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = panyuanrongapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD9DA2051CBB6F2400F93B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "视频通话Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pp.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/视频通话.app/视频通话";
+			};
+			name = Debug;
+		};
+		DD9DA2061CBB6F2400F93B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "视频通话Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pp.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/视频通话.app/视频通话";
+			};
+			name = Release;
+		};
+		DD9DA2081CBB6F2400F93B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "视频通话UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pp.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "视频通话";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DD9DA2091CBB6F2400F93B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "视频通话UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pp.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "视频通话";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9DA1CF1CBB6F2400F93B9C /* Build configuration list for PBXProject "视频通话" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9DA1FF1CBB6F2400F93B9C /* Debug */,
+				DD9DA2001CBB6F2400F93B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9DA2011CBB6F2400F93B9C /* Build configuration list for PBXNativeTarget "视频通话" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9DA2021CBB6F2400F93B9C /* Debug */,
+				DD9DA2031CBB6F2400F93B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9DA2041CBB6F2400F93B9C /* Build configuration list for PBXNativeTarget "视频通话Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9DA2051CBB6F2400F93B9C /* Debug */,
+				DD9DA2061CBB6F2400F93B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9DA2071CBB6F2400F93B9C /* Build configuration list for PBXNativeTarget "视频通话UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9DA2081CBB6F2400F93B9C /* Debug */,
+				DD9DA2091CBB6F2400F93B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD9DA1CC1CBB6F2400F93B9C /* Project object */;
+}

@@ -1,0 +1,17 @@
+//
+//  MuVideoProject.pch
+//  视频通话
+//
+//  Created by mutianyou1 on 16/4/12.
+//  Copyright © 2016年 mutianyou1. All rights reserved.
+//
+
+#ifndef MuVideoProject_pch
+#define MuVideoProject_pch
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGTH [UIScreen mainScreen].bounds.size.height
+#define MAINCOLOR [UIColor colorWithRed:253 / 255.0 green:79 / 255.0 blue:6 / 255.0 alpha:1.0]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* MuVideoProject_pch */
