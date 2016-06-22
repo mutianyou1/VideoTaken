@@ -12,5 +12,14 @@
 
 //test
 //miss
+/*mkdir name
+ 1.git clone https
+ 2.git status
+ 3.git branch -a
+ 4.git add 
+ 5.git commit -m "add"//cd .. -> git status -> git commit
+ 6.git push origin
+ 
+ */
 @end
 
