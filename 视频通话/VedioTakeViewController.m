@@ -181,7 +181,7 @@
     if ([button.titleLabel.text containsString:@"◉"]) {
           [_cancelButton setTitle:@"◎" forState:UIControlStateNormal];
         _timer =  [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeFire) userInfo:nil repeats:YES];
-       // NSString *betaPaht = [NSSearchPathForDirectoriesInDomains(NSTemporaryDirectory(), NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"myVedio.mov"];
+       // ／／NSString *betaPaht = [NSSearchPathForDirectoriesInDomains(NSTemporaryDirectory(), NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"myVedio.mov"];
        // NSString *filePath = [NSTemporaryDirectory() stringByAppendingString:@"myMove.mov"];
         NSURL *url = [NSURL fileURLWithPath:[[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, true) lastObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"compressed.mp4"]]];
         [_MucaptureSession.outPut startRecordingToOutputFileURL:url recordingDelegate:_MucaptureSession];
