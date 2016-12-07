@@ -144,45 +144,13 @@
 
 }
 - (void)startTakeVideo:(NSInteger)cameraIndex{
-//    NSError *error = nil;
-//    NSArray *deviceArray = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
-//    
-//    //初始化摄像头
-//    AVCaptureDeviceInput *videoInput = [AVCaptureDeviceInput deviceInputWithDevice:deviceArray[cameraIndex] error:&error];
-//    //麦克风
-//    AVCaptureDevice *device2 = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeAudio];
-//    AVCaptureDeviceInput *audioInput2 = [AVCaptureDeviceInput deviceInputWithDevice:device2 error:&error];
-//    
-//    //输出
-//    self.outPut  = [[AVCaptureMovieFileOutput alloc]init];
-//    
-//    //初始化session
-//    _captureSession = [[AVCaptureSession alloc]init];
-//    [_captureSession beginConfiguration];
-//    [_captureSession setSessionPreset:AVCaptureSessionPreset640x480];
-    
-    //初始化视频写入
-   // [self initVideoWriter];
-    
-//    //设备开启 默认设备
-//    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-//    
-// 
-//    
-//   
-//   //输出
-//    _videoOutPut = [[AVCaptureVideoDataOutput alloc]init];
-//    [_videoOutPut setAlwaysDiscardsLateVideoFrames:YES];
-//    [_videoOutPut setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_32BGRA] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
-//    [_videoOutPut setSampleBufferDelegate:self queue:dispatch_get_main_queue()];
+
 
 }
 - (void)clickStart:(UIButton*)button{
     if ([button.titleLabel.text containsString:@"◉"]) {
           [_cancelButton setTitle:@"◎" forState:UIControlStateNormal];
         _timer =  [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeFire) userInfo:nil repeats:YES];
-       // ／／NSString *betaPaht = [NSSearchPathForDirectoriesInDomains(NSTemporaryDirectory(), NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"myVedio.mov"];
-       // NSString *filePath = [NSTemporaryDirectory() stringByAppendingString:@"myMove.mov"];
         NSURL *url = [NSURL fileURLWithPath:[[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, true) lastObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"compressed.mp4"]]];
         [_MucaptureSession.outPut startRecordingToOutputFileURL:url recordingDelegate:_MucaptureSession];
     }else{
@@ -274,24 +242,7 @@
 }
 #pragma mark--回调函数
 - (void)initVideoWriter{
-   // CGSize size = CGSizeMake(480, 320);
-//    
-//    NSError *error = nil;
-//    unlink([betaCompressionDict UTF8String]);
-//    
-//    //本地写入
-//    _assetWriter = [[AVAssetWriter alloc]initWithURL:[NSURL fileURLWithPath:betaCompressionDict] fileType:AVFileTypeQuickTimeMovie error:&error];
-//    NSParameterAssert(_assetWriter);
-//    
-//    //错误处理
-//    if (error) {
-//        NSLog(@"error = %@",[error localizedDescription]);
-//    }else{
-//    
-//    
-//    
-//    
-//    }
+ 
 
 }
 - (void)didReceiveMemoryWarning {
