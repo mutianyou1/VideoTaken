@@ -9,11 +9,13 @@
 #import "ViewController.h"
 #import "VedioTakeViewController.h"
 #import "VedioCommunicateViewController.h"
+#import "PostVideoViewController.h"
 
 
 @interface ViewController (){
     UIButton *_takeVedioButton;
     UIButton *_vedioCommunicate;
+    UIButton *_readCacheVedio;
 }
 
 @end
@@ -27,6 +29,7 @@
     self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.barTintColor = MAINCOLOR;
     [self setUpButton];
+    
     
     
     
@@ -48,6 +51,13 @@
     frame.origin.x = WIDTH - 10 - 140;
     _vedioCommunicate.frame = frame;
     [self.view addSubview:_vedioCommunicate];
+    
+    
+    _readCacheVedio = [UIButton buttonWithType:UIButtonTypeSystem];
+    [_readCacheVedio setTitle:@"读取缓存视频" forState:UIControlStateNormal];
+    _readCacheVedio.frame = CGRectMake(WIDTH*0.5 - 100, HEIGTH * 0.5 - 40, 200, 80);
+    [self.view addSubview:_readCacheVedio];
+    [_readCacheVedio addTarget:self action:@selector(readCacheVideo) forControlEvents:UIControlEventTouchUpInside];
 
 }
 - (void)clickButton:(UIButton*)button{
@@ -58,6 +68,14 @@
     
     }
 
+}
+- (void)readCacheVideo{
+    PostVideoViewController *po = [[PostVideoViewController alloc]init];
+    po.url = [self outPutURL];
+    [self.navigationController pushViewController:po animated:YES];
+}
+- (NSURL*)outPutURL{
+    return [NSURL fileURLWithPath:[[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, true) lastObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"compressed.mp4"]]];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

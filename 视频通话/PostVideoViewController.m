@@ -30,6 +30,9 @@
     [self setUpSaveButton];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBackFinished:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
     [self creatPlayer];
+    
+    NSLog(@"缓存文件大小%fMB", [self fileSize:[self outPutURL]]);
+    NSLog(@"缓存文件%@",[self outPutURL]);
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [_player pause];
@@ -48,7 +51,14 @@
 
 }
 - (void)creatPlayer{
+    
     _playerItem = [AVPlayerItem playerItemWithURL:_url];
+    if (_playerItem) {
+       // [AVPlayerItem ]
+        NSLog(@"压缩前%@",_url);
+        
+    }
+    
     _player = [AVPlayer playerWithPlayerItem:_playerItem];
     _playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
     _playerLayer.frame = CGRectMake(0, 20, WIDTH, 300);
@@ -101,6 +111,7 @@
                 NSLog(@"完成后大小%fMB", [self fileSize:[self outPutURL]]);
                 NSLog(@"保存文件名称%@",[self outPutURL]);
                 [self saveVideo:[self outPutURL]];
+                //[self.navigationController popViewControllerAnimated:YES];
             }else{
                 NSLog(@"当前状态%ld",exportSession.status);
                 NSLog(@"当前进度%f",exportSession.progress);
@@ -118,14 +129,15 @@
 }
 
 - (void)saveVideo:(NSURL*)url{
-    ALAssetsLibrary *library = [[ALAssetsLibrary alloc]init];
-    [library writeVideoAtPathToSavedPhotosAlbum:url completionBlock:^(NSURL *assetURL, NSError *error) {
-        if (error) {
-            NSLog(@"压缩保存相册失败");
-        }else {
-            NSLog(@"压缩保存相册成功");
-        }
-    }];
+//    ALAssetsLibrary *library = [[ALAssetsLibrary alloc]init];
+//    [library writeVideoAtPathToSavedPhotosAlbum:url completionBlock:^(NSURL *assetURL, NSError *error) {
+//        if (error) {
+//            NSLog(@"压缩保存相册失败");
+//        }else {
+//            NSLog(@"压缩保存相册成功");
+//        }
+//    }];
+    
 }
 - (CGFloat)fileSize:(NSURL*)url{
     return [[NSData dataWithContentsOfURL:url] length] / 1024 /1024;

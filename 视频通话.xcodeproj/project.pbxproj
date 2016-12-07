@@ -250,7 +250,7 @@
 				TargetAttributes = {
 					DD9DA1D31CBB6F2400F93B9C = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 25RLMX6N5T;
+						DevelopmentTeam = ED8TE9ETB7;
 					};
 					DD9DA1EC1CBB6F2400F93B9C = {
 						CreatedOnToolsVersion = 7.2;
@@ -388,6 +388,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -431,6 +432,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -453,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "视频通话/MuVideoProject.pch";
 				INFOPLIST_FILE = "视频通话/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -467,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "视频通话/MuVideoProject.pch";
 				INFOPLIST_FILE = "视频通话/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;

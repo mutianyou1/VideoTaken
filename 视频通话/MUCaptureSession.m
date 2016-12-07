@@ -107,18 +107,20 @@
      __block NSURL *url = [outputFileURL copy];
     //captureOutput
     if (error == nil) {
-        ALAssetsLibrary *library = [[ALAssetsLibrary alloc]init];
-        if ([library videoAtPathIsCompatibleWithSavedPhotosAlbum:outputFileURL]) {
-            [library writeVideoAtPathToSavedPhotosAlbum:outputFileURL completionBlock:^(NSURL *assetURL, NSError *error) {
-                
-                if (error) {
-                    NSLog(@"vedio wirte failed");
-                    url = nil;
-                }else{
-                    [self compress];
-                }
-            }];
-        }
+//        ALAssetsLibrary *library = [[ALAssetsLibrary alloc]init];
+//        if ([library videoAtPathIsCompatibleWithSavedPhotosAlbum:outputFileURL]) {
+//            [library writeVideoAtPathToSavedPhotosAlbum:outputFileURL completionBlock:^(NSURL *assetURL, NSError *error) {
+//                
+//                if (error) {
+//                    NSLog(@"vedio wirte failed");
+//                    url = nil;
+//                }else{
+//                    NSLog(@"开始导出%@",assetURL);
+//                    url = [assetURL copy];
+//                    [self compress];
+//                }
+//            }];
+//        }
     }else{
         url = nil;
         NSLog(@"vedio write erro%@",error);

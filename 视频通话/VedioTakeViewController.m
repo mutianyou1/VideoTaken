@@ -114,9 +114,9 @@
     _timeCount = [[UILabel alloc]init];
     _timeCount.frame = CGRectMake(WIDTH * 0.5 - 80, 10, 160, 54);
     _timeCount.textAlignment = NSTextAlignmentCenter;
-    _timeCount.text = @"00:20";
+    _timeCount.text = @"00:30";
     _timeCount.textColor = [UIColor whiteColor];
-    _seconds = 20;
+    _seconds = 30;
     [self.view addSubview:_timeCount];
     _formatter = [[NSDateFormatter alloc]init];
     [_formatter setDateFormat:@"mm:ss"];
@@ -183,7 +183,7 @@
         _timer =  [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeFire) userInfo:nil repeats:YES];
        // NSString *betaPaht = [NSSearchPathForDirectoriesInDomains(NSTemporaryDirectory(), NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"myVedio.mov"];
        // NSString *filePath = [NSTemporaryDirectory() stringByAppendingString:@"myMove.mov"];
-        NSURL *url = [NSURL fileURLWithPath:[[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, true) lastObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"myVideo.mp4"]]];
+        NSURL *url = [NSURL fileURLWithPath:[[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, true) lastObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"compressed.mp4"]]];
         [_MucaptureSession.outPut startRecordingToOutputFileURL:url recordingDelegate:_MucaptureSession];
     }else{
     [_timer invalidate];
@@ -198,8 +198,8 @@
     _date = [NSDate dateWithTimeIntervalSince1970:_seconds];
     _timeCount.text = [_formatter stringFromDate:_date];
     if ([_timeCount.text isEqualToString:@"00:00"]) {
-        _seconds = 20;
-        _timeCount.text = @"00:20";
+        _seconds = 30;
+        _timeCount.text = @"00:30";
         [_cancelButton setTitle:@"◉" forState:UIControlStateNormal];
         [_timer invalidate];
         [_MucaptureSession.outPut stopRecording];
